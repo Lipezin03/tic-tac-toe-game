@@ -1,0 +1,148 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: slategray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#game {
+  font-size: 62px;
+  width: 300px;
+  margin-top: -10%;
+  margin-bottom: 50px;
+  background-color: bisque;
+  border-collapse: collapse;
+}
+
+#game td {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  text-align: center;
+}
+
+.winner-text {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  color: brown;
+  margin-top: 20%;
+  font-size: 60px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.hidden {
+  display: none;
+}
+
+span {
+  font-size: 100px;
+}
+
+.box-btn {
+  width: 100%;
+  margin-top: 15%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+.btn-next__game {
+  display: block;
+  width: 300px;
+  height: 60px;
+  margin: 0 auto;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: brown;
+  color: burlywood;
+}
+
+.img-line-box {
+  display: none;
+}
+
+.img-line-box__position1 {
+  margin-top: -309px;
+  margin-left: 27px;
+}
+
+.img-line-box__position2 {
+  margin-top: 82px;
+  margin-left: 27px;
+}
+
+.img-line-box__position3 {
+  margin-top: 80px;
+  margin-left: 27px;
+}
+
+.img-line-box__position4 {
+  margin-top: -278px;
+  margin-left: -193px;
+}
+
+.img-line-box__position5 {
+  margin-top: -369px;
+  margin-left: 7px;
+}
+
+.img-line-box__position6 {
+  margin-top: -369px;
+  margin-left: 200px;
+}
+
+.img-line-box__position7 {
+  margin-top: -393px;
+  margin-left: -2px;
+}
+
+.img-line-box__position8 {
+  margin-top: -381px;
+  margin-left: 9px;
+}
+
+.path1, .path2, .path3, .path4, .path5, .path6 {
+  stroke-dasharray: 381px;
+  stroke-dashoffset: 381px;
+}
+
+.path7, .path8 {
+  stroke-dasharray: 524px;
+  stroke-dashoffset: 524px;
+}
+
+@-webkit-keyframes anim-line {
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes anim-line {
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
